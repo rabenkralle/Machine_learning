@@ -7,7 +7,7 @@ ML: sklearn, pandas, numpy
 API: flask
 Данные: с kaggle - https://www.kaggle.com/c/realestatepriceprediction
 
-Задача: предсказать цены на квартиры.
+Задача: предсказать цены на квартиры.Регрессия
 
 Используемые признаки:
 
@@ -20,7 +20,7 @@ API: flask
 - Floor (number)
 - HouseFloor (number)
 
-Модель: logreg
+Модель: VotingRegressor (GradientBoostingRegressor, RandomForestRegressor, LGBMRegressor)
 
 ### Клонируем репозиторий и создаем образ
 ```
