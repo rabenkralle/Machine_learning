@@ -24,7 +24,7 @@ handler = RotatingFileHandler(filename='../app.log', maxBytes=100000, backupCoun
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 logger.addHandler(handler)
-
+print(os.path.abspath(os.getcwd()))
 def load_model(model_path):
 	# load the pre-trained model
 	global model
@@ -32,7 +32,7 @@ def load_model(model_path):
 		model = dill.load(f)
 	print(model)
 
-modelpath = "./app/models/model.dill"
+modelpath = f"{os.path.abspath(os.getcwd())}/app/model.dill"
 load_model(modelpath)
 
 @app.route("/", methods=["GET"])

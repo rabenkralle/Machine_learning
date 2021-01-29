@@ -1,4 +1,4 @@
 #!/bin/sh
 
 
-python /app/app/run_server.py
+ls ./app/models/ & python ./app/run_server.py
