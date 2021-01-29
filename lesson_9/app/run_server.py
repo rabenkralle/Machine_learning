@@ -24,7 +24,7 @@ handler = RotatingFileHandler(filename='../app.log', maxBytes=100000, backupCoun
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 logger.addHandler(handler)
-print(os.path.abspath(os.getcwd()))
+
 def load_model(model_path):
 	# load the pre-trained model
 	global model
