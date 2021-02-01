@@ -32,7 +32,7 @@ def load_model(model_path):
 		model = dill.load(f)
 	print(model)
 
-modelpath = f"{os.path.abspath(os.getcwd())}/app/model.dill"
+modelpath = f"{os.path.abspath(os.getcwd())}/app/models/model.dill"
 load_model(modelpath)
 
 @app.route("/", methods=["GET"])
