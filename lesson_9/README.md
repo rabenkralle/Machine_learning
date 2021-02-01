@@ -7,7 +7,7 @@ ML: sklearn, pandas, numpy
 API: flask
 Данные: с kaggle - https://www.kaggle.com/c/realestatepriceprediction
 
-Задача: предсказать цены на квартиры.Регрессия
+Задача: предсказать цены на квартиры. Регрессия
 
 Используемые признаки:
 
@@ -24,10 +24,11 @@ API: flask
 
 ### Клонируем репозиторий и создаем образ
 ```
-$ git clone https://github.com/rabenkralle/Machine_learning/tree/master/lesson_9
-$ cd lesson_9
+$ git clone https://github.com/rabenkralle/Machine_learning.git
+$ cd Machine_learning/lesson_9
 $ docker build -t rush/gb_docker_price_predictions .
 ```
+Для создания модели проходим Step1_model
 
 ### Запускаем контейнер
 
